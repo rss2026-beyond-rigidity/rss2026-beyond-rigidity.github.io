@@ -59,7 +59,7 @@ params:
       time: "8:50"
 
     - name: "Jeannette Bohg"
-      photo: "/img/bohg.png"
+      photo: "/img/tbd.jpg" #"/img/bohg.png"
       bio: "She is an Assistant Professor of Computer Science at Stanford University and director of the Interactive Perception and Robot Learning Lab. My research asks two central questions: What are the principles underlying robust sensorimotor coordination in humans, and how can we implement them in robots? Addressing these questions requires working at the intersection of robotics, machine learning, and computer vision. In my lab, we focus particularly on robotic grasping and manipulation."
       company: "Stanford University"
       link:
@@ -86,7 +86,7 @@ params:
       time: "10:20"
 
     - name: "Siyuan Huang"
-      photo: "/img/siyuan.png"
+      photo: "/img/tbd.jpg" #"/img/siyuan.png"
       bio: "He is a Research Scientist at the Beijing Institute for General Artificial Intelligence (BIGAI), directing the Embodied Robotics Center and BIGAI-Unitree Joint Lab of Embodied AI and Humanoid Robot. He received his Ph.D. from the Department of Statistics at the University of California, Los Angeles (UCLA). His research aims to build a general agent capable of understanding and interacting with 3D environments like humans. To achieve this, his work made contributions in (i) developing scalable and hierarchical representations for 3D reconstruction and semantic grounding, (ii) modeling and imitating human interactions with 3D world, and (iii) building robots proficient in interactions within the 3D world and with humans."
       company: "Beijing Institute for General Artificial Intelligence"
       presentation:
