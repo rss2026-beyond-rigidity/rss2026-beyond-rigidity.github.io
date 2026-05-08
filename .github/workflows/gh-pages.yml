@@ -30,8 +30,17 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Remove symlinks
-        run: find ./public -type l -delete
+      - name: Clean artifact for deployment
+        run: |
+          # Remove symlinks
+          find ./public -type l -delete
+          # Remove hard links (keep only regular files)
+          find ./public -type f -links +1 -delete
+          # Verify no symlinks remain
+          if find ./public -type l | grep -q .; then
+            echo "Warning: Symlinks still present"
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
