@@ -32,15 +32,29 @@ jobs:
 
       - name: Clean artifact for deployment
         run: |
-          # Remove symlinks
+          # Remove symlinks and hard links
           find ./public -type l -delete
-          # Remove hard links (keep only regular files)
           find ./public -type f -links +1 -delete
-          # Verify no symlinks remain
+          # List remaining suspects before upload
+          echo "Checking for lingering symlinks/hardlinks:"
           if find ./public -type l | grep -q .; then
-            echo "Warning: Symlinks still present"
+            echo "ERROR: Symlinks present after cleanup!"
+            find ./public -type l
             exit 1
           fi
+          if find ./public -type f -links +1 | grep -q .; then
+            echo "ERROR: Hardlinks present after cleanup!"
+            find ./public -type f -links +1
+            exit 1
+          fi
+          echo "OK: No symlinks or hardlinks found."
+
+      - name: Check artifact size before upload
+        run: |
+          ARTIFACT_SIZE=$(du -sh ./public | cut -f1)
+          echo "Artifact size is $ARTIFACT_SIZE"
+          FILE_COUNT=$(find ./public | wc -l)
+          echo "Total files: $FILE_COUNT"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
