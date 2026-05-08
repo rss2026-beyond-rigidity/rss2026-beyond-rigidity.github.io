@@ -5,6 +5,7 @@ on:
     branches:
       - main
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,47 +22,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "latest"
+          extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      - name: Clean artifact for deployment
-        run: |
-          # Remove symlinks and hard links
-          find ./public -type l -delete
-          find ./public -type f -links +1 -delete
-          # List remaining suspects before upload
-          echo "Checking for lingering symlinks/hardlinks:"
-          if find ./public -type l | grep -q .; then
-            echo "ERROR: Symlinks present after cleanup!"
-            find ./public -type l
-            exit 1
-          fi
-          if find ./public -type f -links +1 | grep -q .; then
-            echo "ERROR: Hardlinks present after cleanup!"
-            find ./public -type f -links +1
-            exit 1
-          fi
-          echo "OK: No symlinks or hardlinks found."
-
-      - name: Check artifact size before upload
-        run: |
-          ARTIFACT_SIZE=$(du -sh ./public | cut -f1)
-          echo "Artifact size is $ARTIFACT_SIZE"
-          FILE_COUNT=$(find ./public | wc -l)
-          echo "Total files: $FILE_COUNT"
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
           path: ./public
-          retention-days: 1
 
   deploy:
     if: github.ref == 'refs/heads/main'
@@ -73,4 +53,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4
