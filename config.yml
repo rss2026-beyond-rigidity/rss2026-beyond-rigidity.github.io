@@ -15,7 +15,7 @@ params:
   Location: "International Convention Center and University of Technology Sydney"
   Venue: ""
   Address: ""
-  City:  "Sydney"
+  City: "Sydney"
   State: "Australia"
   Images: ["/img/RSS2026-logo.png"]
   # GoogleMapsKey: "my-secret-maps-key"
@@ -56,58 +56,52 @@ params:
   # The entire schedule
   Schedule:
     - name: "Opening Remarks by the Workshop Organizers"
-      time: "8:50"
+      time: "8:30"
 
-    - name: "Jeannette Bohg"
-      photo: "/img/tbd.jpg" #"/img/bohg.png"
-      bio: "She is an Assistant Professor of Computer Science at Stanford University and director of the Interactive Perception and Robot Learning Lab. My research asks two central questions: What are the principles underlying robust sensorimotor coordination in humans, and how can we implement them in robots? Addressing these questions requires working at the intersection of robotics, machine learning, and computer vision. In my lab, we focus particularly on robotic grasping and manipulation."
-      company: "Stanford University"
+    - name: "Yue Wang"
+      photo: "/img/ywang.png"
+      bio: "Yue is an Assistant Professor at University of Southern California at the department of Computer Science, leading the Physical Superintelligence Lab. He graduated from MIT EECS in 2022, advised by Prof. Justin Solomon at the Geometric Data Processing Group. Previously, Yue was a master’s student at the University of California, San Diego. Prior to that, he received my BEng in Computer Science from Zhejiang University."
+      company: "University of Southern California"
       link:
-        href: ""
+        href: "https://yuewang.xyz/"
         text: ""
       presentation:
-        title: "TBD" 
+        title: "TBD"
         description: "TODO Talk Description"
-        time: "9:00"
+        time: "8:45"
 
     - name: "Niko Suenderhauf"
-      photo: "/img/tbd.jpg" #"/img/niko2021.png"
-      bio: "He is a Professor at Queensland University of Technology (QUT) in Brisbane and Deputy Director of the QUT Centre for Robotics, where I lead the Visual Understanding and Learning Program. I am also Deputy Director (Research) for the ARC Research Hub in Intelligent Robotic Systems for Real-Time Asset Management (2022-2027) and was Chief Investigator of the Australian Centre for Robotic Vision 2017-2020. I conduct research in robotic vision and robot learning, at the intersection of robotics, computer vision, and machine learning. My research interests focus on robotic learning for manipulation, interaction and navigation, scene understanding, and the reliability of deep learning for open-set and open-world conditions."
+      photo: "/img/niko2021.png"
+      bio: "He is a Professor at Queensland University of Technology (QUT) in Brisbane and Deputy Director of the QUT Centre for Robotics, where he leads the Visual Understanding and Learning Program. He is also Deputy Director (Research) for the ARC Research Hub in Intelligent Robotic Systems for Real-Time Asset Management (2022-2027) and was Chief Investigator of the Australian Centre for Robotic Vision 2017-2020. Niko conducts research in robotic vision and robot learning, at the intersection of robotics, computer vision, and machine learning. His research interests focus on robotic learning for manipulation, interaction and navigation, scene understanding, and the reliability of deep learning for open-set and open-world conditions."
       company: "Queensland University of Technology"
       link:
-        href: ""
+        href: "https://nikosuenderhauf.github.io/"
         text: ""
       presentation:
         title: "TBD"
         description: "TODO Talk Description"
-        time: "9:40"
+        time: "9:20"
 
     - name: "Coffee Break and Poster Session"
-      time: "10:20"
+      time: "09:50"
 
-    - name: "Siyuan Huang"
-      photo: "/img/tbd.jpg" #"/img/siyuan.png"
-      bio: "He is a Research Scientist at the Beijing Institute for General Artificial Intelligence (BIGAI), directing the Embodied Robotics Center and BIGAI-Unitree Joint Lab of Embodied AI and Humanoid Robot. He received his Ph.D. from the Department of Statistics at the University of California, Los Angeles (UCLA). His research aims to build a general agent capable of understanding and interacting with 3D environments like humans. To achieve this, his work made contributions in (i) developing scalable and hierarchical representations for 3D reconstruction and semantic grounding, (ii) modeling and imitating human interactions with 3D world, and (iii) building robots proficient in interactions within the 3D world and with humans."
-      company: "Beijing Institute for General Artificial Intelligence"
-      presentation:
-        title: "TBD"
-        description: "TODO Talk Description"
-        time: "11:00"
-
-    - name: "Speaker 4 - TDB"
-      photo: "/img/tbd.jpg"
-      bio: ""
-      company: ""
+    - name: "Kris Hauser"
+      photo: "/img/khauser.jpg"
+      bio: "Kris Hauser is a Professor in the Siebel School of Computing and Data Science at the University of Illinois at Urbana-Champaign, and Affiliate of the Department of Electrical and Computer Engineering and the Department of Mechanical Science and Engineering. He received his PhD in Computer Science from Stanford University in 2008, bachelor's degrees in Computer Science and Mathematics from UC Berkeley in 2003, and worked as a postdoctoral fellow at UC Berkeley. He then joined the faculty at Indiana University from 2009-2014, where he started the Intelligent Motion Lab, and then joined the faculty of Duke University from 2014-2019. He also has consulted for Google's autonomous driving company, Waymo, from 2019-2023. Prof. Hauser is a recipient of a Stanford Graduate Fellowship, Siebel Scholar Fellowship, Best Paper Award at IEEE International Conference on Humanoid Robots 2015, the NSF CAREER award, and three Amazon Research Awards. He is currently on leave from UIUC, serving as Head of Robotic Intelligence at Samsung Research America."
+      company: "University of Illinois Urbana-Champaign"
+      link:
+        href: "https://kkhauser.web.illinois.edu/"
+        text: ""
       presentation:
         title: "TBD"
         description: "TODO Talk Description"
         time: "11:00"
 
     - name: "Roundtable Discussion"
-      time: "12:20"
+      time: "11:30"
 
     - name: "Closing Remarks"
-      time: "12:50"
+      time: "12:30"
 
   Organizers:
     - name: "Leonard Klüpfel"
@@ -116,7 +110,6 @@ params:
       url: ""
       email: "leonard.kluepfel@dlr.de"
       type: "co"
-
 
     - name: "Júlia Borràs Sol"
       photo: "/img/jborras.jpeg"
@@ -155,11 +148,10 @@ params:
 
     - name: "Rudolph Triebel"
       photo: "/img/triebel.jpg"
-      university: "German Aerospace Center (DLR), Karlsruhe Institute of Technology (KIT)"
+      university: "German Aerospace Center (DLR); Karlsruhe Institute of Technology (KIT)"
       url: "https://www.dlr.de/en/blog/authors/rudolph-triebel"
       email: "rudolph.triebel@dlr.de"
       type: "co"
-
 
   Submission:
     topics:
