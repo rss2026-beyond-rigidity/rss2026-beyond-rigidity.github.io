@@ -80,10 +80,10 @@ params:
       presentation:
         title: "TBD"
         description: "TODO Talk Description"
-        time: "9:20"
+        time: "9:15"
 
     - name: "Coffee Break and Poster Session"
-      time: "09:50"
+      time: "09:45"
 
     - name: "Kris Hauser"
       photo: "/img/khauser.jpg"
