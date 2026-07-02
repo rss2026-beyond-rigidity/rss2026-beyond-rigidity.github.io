@@ -11,6 +11,9 @@
       <h1 class="location-title">
          {{ .Location }}
          </h1>
+         {{ with .Venue }}
+         <h2 class="tagline" style="margin-bottom: 15px;">{{ . }}</h2>
+            {{ end }}
          <h2 class="tagline">{{ .date }}, {{ .city }}</h2>
     </a>
     <a href="https://roboticsconference.org/" target="_blank" style="outline:none;"><img class="title-logo" src="img/RSS2026-logo.png" alt=""></a>

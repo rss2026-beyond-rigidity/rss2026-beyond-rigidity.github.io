@@ -13,7 +13,7 @@ params:
   # Description: "Have we Solved the Perception Problem for Robots?"
   Date: "13 July 2026"
   Location: "International Convention Center and University of Technology Sydney"
-  Venue: ""
+  Venue: "Building 11, Level B1, Room 101"
   Address: ""
   City: "Sydney"
   State: "Australia"
@@ -28,6 +28,7 @@ params:
     - schedule
     # - papers
     - submission
+    - instructions
     - dates
     - organizers
 
@@ -38,6 +39,7 @@ params:
     schedule: "Schedule"
     # papers: "Access Papers"
     submission: "Call for Papers"
+    instructions: "Instructions"
     dates: "Important Dates"
     organizers: "Organizers"
 
@@ -104,7 +106,7 @@ params:
         href: "https://njaquier.ch/"
         text: ""
       presentation:
-        title: "TBD"
+        title: "A differential geometric take on deformable object manipulation"
         description: "TODO Talk Description"
         time: "11:15"
 
