@@ -27,7 +27,7 @@ params:
     - speakers
     - schedule
     - papers
-    - submission
+    # - submission
     - instructions
     - dates
     - organizers
