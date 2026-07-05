@@ -1,18 +1,122 @@
 <h2 class="section-title">{{ .Titles.papers }}</h2>
-<p style=margin-bottom:0.5em>The accepted papers can be accessed below:</p>
+<p style="margin-bottom:0.5em;">The accepted papers are listed below:</p>
 
-{{ range $slot := .schedule }}
-{{ if ne .presentation nil }}
-{{ if ne .spotlight nil }}
-{{ if ne .spotlight nil }}
-{{range .spotlight.titles}}
-<p style=margin-bottom:1.5em>
-    <b>{{ .title }}</b><br>
-    {{ .authors }}<br>
-    <a href="{{ .url }}"><img class="pdf-download-icon" src="/img/file-pdf-solid.svg" alt="PDF Paper Download"/></a> 
-    {{ if ne .video nil }}<a href="{{ .video }}"><img class="video-download-icon" src="/img/video-solid.svg" alt="Video Presentation Download"/></a> {{ end }}<br></p> 
-{{ end }}
-{{ end }}
-{{ end }}
-{{ end }}
-{{ end }}
+<div style="display:flex;align-items:center;margin-bottom:1.2em;">
+  <div style="flex-shrink:0;width:2em;text-align:center;font-size:1.8em;">
+    <a href="/accepted_papers/1_RigidFormer_Learning_Rigid_D.pdf" target="_blank">
+      <img class="pdf-download-icon" src="/img/file-pdf-solid.svg" alt="Download PDF"/>
+    </a>
+  </div>
+  <p style="margin:0;">
+    <b>RigidFormer: Learning Rigid Dynamics and Beyond with Transformers</b><br>
+    <i>Zhiyang Dou, Minghao Guo, Haixu Wu, Doug Roble, Tuur Stuyck, Wojciech Matusik</i>
+  </p>
+</div>
+
+<div style="display:flex;align-items:center;margin-bottom:1.2em;">
+  <div style="flex-shrink:0;width:2em;text-align:center;font-size:1.8em;">
+    <a href="/accepted_papers/3_CableSort_Force_Guided_Dual_.pdf" target="_blank">
+      <img class="pdf-download-icon" src="/img/file-pdf-solid.svg" alt="Download PDF"/>
+    </a>
+  </div>
+  <p style="margin:0;">
+    <b>CableSort: Force-Guided Dual-Arm Sorting of Stacked Cables Towards Physics Action Models</b><br>
+    <i>Yuxin Fu, Haoran Han, Boxian Yao, Peiyu Zhu</i>
+  </p>
+</div>
+
+<div style="display:flex;align-items:center;margin-bottom:1.2em;">
+  <div style="flex-shrink:0;width:2em;text-align:center;font-size:1.8em;">
+    <a href="/accepted_papers/4_chi_0_Resource_Aware_Robust_.pdf" target="_blank">
+      <img class="pdf-download-icon" src="/img/file-pdf-solid.svg" alt="Download PDF"/>
+    </a>
+  </div>
+  <p style="margin:0;">
+    <b>χ0: Resource-Aware Robust Manipulation via Taming Distributional Inconsistencies</b><br>
+    <i>Checheng Yu, Chonghao Sima, Gangcheng Jiang, Hai Zhang, Haoguang Mai, Hongyang Li, Huijie Wang, Jin Chen, Kaiyang Wu, Li Chen, Lirui Zhao, Modi Shi, Ping Luo, Qingwen Bu, Shijia Peng, Tianyu Li, Yibo Yuan</i>
+  </p>
+</div>
+
+<div style="display:flex;align-items:center;margin-bottom:1.2em;">
+  <div style="flex-shrink:0;width:2em;text-align:center;font-size:1.8em;">
+    <a href="/accepted_papers/5_Manip4Care_Constraint_RRTCon.pdf" target="_blank">
+      <img class="pdf-download-icon" src="/img/file-pdf-solid.svg" alt="Download PDF"/>
+    </a>
+  </div>
+  <p style="margin:0;">
+    <b>Manip4Care+: Constraint-RRTConnect with Learning-Based Constraint Checking for Assistive Limb Manipulation</b><br>
+    <i>Kai Cheng, Yi Wu, Ahmed H. Qureshi</i>
+  </p>
+</div>
+
+<div style="display:flex;align-items:center;margin-bottom:1.2em;">
+  <div style="flex-shrink:0;width:2em;text-align:center;font-size:1.8em;">
+    <a href="/accepted_papers/6_Interactive_World_Simulator_.pdf" target="_blank">
+      <img class="pdf-download-icon" src="/img/file-pdf-solid.svg" alt="Download PDF"/>
+    </a>
+  </div>
+  <p style="margin:0;">
+    <b>Interactive World Simulator for Robot Policy Training and Evaluation</b><br>
+    <i>Yixuan Wang, Rhythm Syed, Fangyu Wu, Mengchao Zhang, Aykut Onol, Jose Barreiros, Hooshang Nayyeri, Tony Dear, Huan Zhang, Yunzhu Li</i>
+  </p>
+</div>
+
+<div style="display:flex;align-items:center;margin-bottom:1.2em;">
+  <div style="flex-shrink:0;width:2em;text-align:center;font-size:1.8em;">
+    <a href="/accepted_papers/7_Topology_Agnostic_Mesh_Recon.pdf" target="_blank">
+      <img class="pdf-download-icon" src="/img/file-pdf-solid.svg" alt="Download PDF"/>
+    </a>
+  </div>
+  <p style="margin:0;">
+    <b>Topology-Agnostic Mesh Reconstruction of Deformable Objects from Sparse Touch</b><br>
+    <i>Everest Yang</i>
+  </p>
+</div>
+
+<div style="display:flex;align-items:center;margin-bottom:1.2em;">
+  <div style="flex-shrink:0;width:2em;text-align:center;font-size:1.8em;">
+    <a href="/accepted_papers/12_Robustness_without_Wrinkles.pdf" target="_blank">
+      <img class="pdf-download-icon" src="/img/file-pdf-solid.svg" alt="Download PDF"/>
+    </a>
+  </div>
+  <p style="margin:0;">
+    <b>Robustness without Wrinkles: Parallel Simulation & Robust MPC for Certified Deformable Manipulation</b><br>
+    <i>Wei-Chen Li, Jeffrey Fang, Sasanka Polisetti, Yuexi Song, Glen Chou</i>
+  </p>
+</div>
+
+<div style="display:flex;align-items:center;margin-bottom:1.2em;">
+  <div style="flex-shrink:0;width:2em;text-align:center;font-size:1.8em;">
+    <a href="/accepted_papers/13_LeHome_A_Simulation_Environ.pdf" target="_blank">
+      <img class="pdf-download-icon" src="/img/file-pdf-solid.svg" alt="Download PDF"/>
+    </a>
+  </div>
+  <p style="margin:0;">
+    <b>LeHome: A Simulation Environment for Deformable Object Manipulation in Household Scenarios</b><br>
+    <i>Zeyi Li, Hangting Liu, Shawn Xie, Jade Yang, Steve Xie, Ruihai Wu</i>
+  </p>
+</div>
+
+<div style="display:flex;align-items:center;margin-bottom:1.2em;">
+  <div style="flex-shrink:0;width:2em;text-align:center;font-size:1.8em;">
+    <a href="/accepted_papers/15_DefWAM_3D_Point_Flow_Predic.pdf" target="_blank">
+      <img class="pdf-download-icon" src="/img/file-pdf-solid.svg" alt="Download PDF"/>
+    </a>
+  </div>
+  <p style="margin:0;">
+    <b>DefWAM: 3D Point Flow Prediction Learns Effective Goal-Conditioned Deformable Object Manipulation</b><br>
+    <i>Gaurav Singh, Sergio Orozco, Ryan Duong, Mete Tuluhan Akbulut, George Konidaris, Srinath Sridhar</i>
+  </p>
+</div>
+
+<div style="display:flex;align-items:center;margin-bottom:1.2em;">
+  <div style="flex-shrink:0;width:2em;text-align:center;font-size:1.8em;">
+    <a href="/accepted_papers/16_Beyond_Success_Rate_Empiric.pdf" target="_blank">
+      <img class="pdf-download-icon" src="/img/file-pdf-solid.svg" alt="Download PDF"/>
+    </a>
+  </div>
+  <p style="margin:0;">
+    <b>Beyond Success Rate: Empirical Evidence That Compliance Dominates in Deformable-Object Grasping</b><br>
+    <i>Adedayo Akinade, Keenan Granland, Jürgen Leitner, Michael Burke</i>
+  </p>
+</div>

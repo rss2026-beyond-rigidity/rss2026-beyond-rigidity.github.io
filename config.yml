@@ -26,7 +26,7 @@ params:
     - about
     - speakers
     - schedule
-    # - papers
+    - papers
     - submission
     - instructions
     - dates
@@ -37,7 +37,7 @@ params:
     about: "Overview"
     speakers: "Speakers"
     schedule: "Schedule"
-    # papers: "Access Papers"
+    papers: "Accepted Papers"
     submission: "Call for Papers"
     instructions: "Instructions"
     dates: "Important Dates"
