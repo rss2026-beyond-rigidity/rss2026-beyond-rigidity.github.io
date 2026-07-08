@@ -24,6 +24,11 @@
           <section class="{{ $section }}" id="{{ $section }}">
             {{ partial $section $.Site.Params }}
           </section>
+          {{ if eq $section "papers" }}
+          <section class="submission" id="submission">
+            {{ partial "submission.html" $.Site.Params }}
+          </section>
+          {{ end }}
         {{ end }}
       </div>
     </div>
