@@ -102,6 +102,7 @@ params:
     - name: "Noémie Jaquier"
       photo: "/img/njaquier.jpeg"
       bio: "Noémie Jaquier is an assistant professor at the KTH Royal Institute of Technology, where she heads the Geometric Robot Learning (GeoRob) Lab at the Division of Robotics, Perception and Learning. She received her PhD degree from the Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland in 2020. Prior to joining KTH, she was a postdoctoral researcher in the High Performance Humanoid Technologies Lab (H²T) at the Karlsruhe Institute of Technology (KIT) and a visiting postdoctoral scholar at the Stanford Robotics Lab. Her research investigates data-efficient and theoretically-sound learning algorithms that leverage differential geometry- and physics-based inductive bias to endow robots with close-to-human learning and adaptation capabilities. Noémie is the recipient of a WASP-AI/MLX professorship and a starting grant from the Swedish research council. She received several awards, notably the Best Presentation Award at CoRL’19, Best Paper Award Finalists (IROS’23, ICRA’24), the Hector-Stiftung Preis 2024 from the Heidelberg Academy of Sciences, and AI newcomer of Technical and Engineering Sciences 2023 by the German Federal Ministry of Education and Research."
+      company: "KTH Royal Institute of Technology"
       link:
         href: "https://njaquier.ch/"
         text: ""
