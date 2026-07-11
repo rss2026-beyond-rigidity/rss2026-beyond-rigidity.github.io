@@ -80,7 +80,7 @@ params:
         href: "https://nikosuenderhauf.github.io/"
         text: ""
       presentation:
-        title: "TBD"
+        title: "Physically Embodied Gaussian Splatting as a Representation for Robotic Manipulation"
         description: "TODO Talk Description"
         time: "9:15"
 
@@ -95,7 +95,7 @@ params:
         href: "https://kkhauser.web.illinois.edu/"
         text: ""
       presentation:
-        title: "TBD"
+        title: "Modeling the World as “Stuff”"
         description: "TODO Talk Description"
         time: "10:45"
 
