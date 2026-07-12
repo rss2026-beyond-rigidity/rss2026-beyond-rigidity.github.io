@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="author" content="{{ .Site.Params.Name }}" />
   <meta name="description" content="{{ .Site.Params.Description }}">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
@@ -36,7 +36,7 @@
       <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
 
         <!-- Top row: four equal columns via CSS Grid — guarantees even spacing -->
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); column-gap: 40px; align-items: start; margin-bottom: 40px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); column-gap: 40px; row-gap: 35px; align-items: start; margin-bottom: 40px;">
 
           <!-- RIG block -->
           <div style="text-align: center;">

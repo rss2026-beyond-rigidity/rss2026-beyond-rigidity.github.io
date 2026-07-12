@@ -1116,3 +1116,25 @@ img.video-download-icon {
         display: none;
     }
 }
+/* =============================================================================
+   MOBILE FIXES
+   ========================================================================== */
+html, body {
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+  .logo-name      { font-size: 3.2em; }
+  .subtitle       { font-size: 1.6em; }
+  .location-title { font-size: 1.8em; }
+  .tagline        { font-size: 1.4em; }
+  .title-logo     { width: 85%; }
+  h2, h3, h4      { font-size: 2.6em; }
+  p               { font-size: 1.5em; }
+
+  .organizer-item       { padding-left: 110px; min-height: 95px; }
+  .organizer-photo      { width: 80px; height: 80px; }
+  .organizer-university { max-width: none; }
+
+  .schedule-tbl { overflow-x: auto; }
+}
